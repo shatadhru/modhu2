@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const dbURL = "mongodb+srv://modhu_database_sontube:ZtjBYI57W6oJWeSm@cluster0.4vtdh.mongodb.net/Modhus_chatApp"
+const dbURL = process.env.SONTU_DB_MODHU;
 
 mongoose
   .connect(dbURL)
