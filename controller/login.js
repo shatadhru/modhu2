@@ -11,9 +11,9 @@ exports.login_post = async  (req,res)=>{
     try {
       const user = await User.findOne({username:username, password:password});
       if(user){
-        res.redirect("/");
+        res.send("")
       }else{
-        res.send("User not found")
+        res.send("Successfully Logined Modhu")
       }
     } catch (error) {
 
