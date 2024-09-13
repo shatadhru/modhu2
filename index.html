@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modhu Startup</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <style>
+        /* General body and background styles */
+        body {
+            background-color: #fff4e6;
+            /* Soft cream color */
+            font-family: poppins;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        /* Center the content vertically */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding-top: 20px;
+            /* Adjust this to ensure top logo is positioned 85px from top */
+        }
+
+        /* Style for the first logo (logo1.png) */
+        .logo1 {
+            margin-top: 0px;
+            width: 150px;
+        }
+
+        /* Style for the second logo (Modhu text logo) */
+        .logo2 {
+            margin-top: 30px;
+            width: 120px;
+        }
+
+        /* Style for the paragraph under logo 2 */
+        .tagline {
+            margin-top: 25px;
+            color: #663700;
+            /* Brown color similar to the divider */
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* Buttons styling */
+        .login-btn {
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 25px;
+            border: 2px solid #ff9100;
+            padding: 10px 15px;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Google and Facebook logo in buttons */
+        .login-btn img {
+            margin-right: 10px;
+            height: 24px;
+        }
+
+        /* Divider style */
+
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dividerline {
+            border-bottom: 2px solid #663700;
+            width: 100px;
+            /* Adjust width for the line */
+            margin: 0 5px;
+            /* Add space between the line and the text */
+        }
+
+        h3 {
+            margin: 0;
+            padding: 0 10px;
+            /* Add padding to give space around the "or" */
+            color: #838282;
+            font-size: 15px;
+        }
+
+
+
+        /* Add some animation */
+        .container {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Premium orange button */
+        .premium-btn {
+            text-decoration: none !important;
+            display: inline-block;
+            /* Ensures the button behaves like a block element */
+            text-align: center;
+            /* Centers the text inside the button */
+            margin-top: 20px;
+            background-color: #ff9100;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 0;
+            width: 100%;
+            /* This makes the button take full width of its container */
+            border: none;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+
+        }
+
+        .premium-btn:hover {
+            background-color: #e68a00;
+            /* Darker orange on hover */
+
+            color: white;
+            transition: 1s ease-out;
+            font-size: 20px;
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center" >
+        <!-- Logo 1 (Bee logo) -->
+        <img src="./img/logo1.png" class="logo1" alt="Logo 1">
+
+        <!-- Logo 2 (Modhu text logo) -->
+        <img src="./img/logo2.png" class="logo2" alt="Modhu Logo">
+
+        <!-- Tagline -->
+        <p class="tagline">Connecting Bangladesh, One Chat at a Time!</p>
+
+        <!-- Start with Google button -->
+        <button class="btn btn-light login-btn">
+            <img src="./img/goggle.png" alt="Google">
+            Start with Google
+        </button>
+
+        <!-- Start with Facebook button -->
+        <button class="btn btn-light login-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                alt="Facebook">
+            Start with Facebook
+        </button>
+
+        <!-- Divider -->
+        <div class="divider">
+            <div class="dividerline"></div>
+            <h3>or</h3>
+            <div class="dividerline"></div>
+        </div>
+
+        <!-- Start with Modhu premium button -->
+        <a href="/login" class="premium-btn">Start With Modhu </a>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
