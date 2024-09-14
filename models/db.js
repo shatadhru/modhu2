@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+
 // Define the user schema without `re_password`
 const userSchema = new mongoose.Schema({
   username: {
@@ -15,6 +16,8 @@ const userSchema = new mongoose.Schema({
     default: Date.now,
   },
 });
+
+
 
 // Export the model
 const User = mongoose.model("User", userSchema);

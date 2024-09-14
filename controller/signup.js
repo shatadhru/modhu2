@@ -1,7 +1,7 @@
-
-
 const path = require("path");
 const User = require("../models/db");
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
 
 exports.signup_get = (req,res)=>{
   res.sendFile(path.join(__dirname, '../public/signup.html'));
@@ -13,11 +13,16 @@ exports.signup_post = async (req,res)=>{
    }else{
     try {
 
-      const user = new User({username:username,
-         password:password})
+         
+        const hash = await bcrypt.hash(password,saltRounds);
+      const user = new User({
+        username:username,
+        password:hash
+      })
+        await user.save();
 
       if(user){
-          await user.save();
+          
           
 
           res.status(201).send("User Created Successfully");``
