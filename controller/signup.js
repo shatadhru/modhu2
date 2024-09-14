@@ -25,7 +25,7 @@ exports.signup_post = async (req,res)=>{
           
           
 
-          res.status(201).send("User Created Successfully");``
+          res.status(201).redirect("/login")``
       }
       
     } catch (error) {
