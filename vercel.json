@@ -2,14 +2,23 @@
   "version": 2,
   "builds": [
     {
+<<<<<<< HEAD
       "src": "index.js",
+=======
+      "src": "index.js", // Change to your entry file if different
+>>>>>>> 313bf2c7ee5c5eb8b61d42e406bf44b41bb543c5
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
+<<<<<<< HEAD
       "src": "/(.)",
       "dest": "index.js"
+=======
+      "src": "/(.*)",
+      "dest": "index.js" // Again, change this to your entry file if different
+>>>>>>> 313bf2c7ee5c5eb8b61d42e406bf44b41bb543c5
     }
   ]
 }
