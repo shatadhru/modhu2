@@ -4,6 +4,7 @@ const express = require('express');
 const {  home } = require('../controller/main.controller');
 const { signup_post, signup_get } = require('../controller/signup');
 const { login_get, login_post } = require('../controller/login');
+const { main_chat } = require('../controller/main.chat');
 const router = express.Router();
 
   router.get("/", home);
@@ -11,6 +12,7 @@ const router = express.Router();
   router.post("/signup", signup_post);
   router.get("/login", login_get);
   router.post("/login", login_post);
+  router.get("/main", main_chat);
 
   module.exports = router;
 
